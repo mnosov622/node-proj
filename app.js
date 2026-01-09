@@ -12,7 +12,7 @@ const asyncHandler = (handler) => (req, res, next) =>
   Promise.resolve(handler(req, res, next)).catch(next);
 
 app.get('/', (req, res) => {
-  res.send('Hello, Sequelize with Express!');
+  res.send('Hello, Sequelize with Express! V2');
 });
 
 // --- Users ---
